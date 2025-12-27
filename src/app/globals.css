@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #f9fafb;
+    --foreground: #1f2937;
+
+    --card: #ffffff;
+    --card-foreground: #1f2937;
+
+    --popover: #ffffff;
+    --popover-foreground: #1f2937;
+
+    --primary: #155dfc;
+    --primary-foreground: #ffffff;
+    --primary-hover: #1447e6;
+
+    --icon: #155dfc;
+    --icon-hover: #1447e6;
+
+    --disabled: #e5e7eb;
+    --disabled-foreground: #9ca3af;
+
+    --secondary: #e5e7eb;
+    --secondary-foreground: #1f2937;
+    --secondary-hover: #374151;
+
+    --outline: #eff6ff;
+    --outline-foreground: #1f2937;
+    --outline-hover: #dbeafe;
+    --outline-border: #155dfc;
+
+    --muted-forground: #6b7280;
+
+    --destructive: #dc2626;
+    --destructive-foreground: #ffffff;
+    --destructive-hover: #b91c1c;
+
+    --border: #e5e7eb;
+    --input: #e5e7eb;
+    --ring: #155dfc;
+    --chart-sucsess: #00bc7d;
+    --chart-error: #ef4444;
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    font-family: var(--font-geist-mono), monospace;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
